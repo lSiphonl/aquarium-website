@@ -9,12 +9,15 @@ nav {
     background-color: #1F2937;
     text-decoration: none;
     justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 ul {
     display: flex;
     list-style-type: none;
-    gap: 10px;
+    gap: 25px;
+    padding-top: 8px;
 }
 
 h2 {
