@@ -15,10 +15,9 @@ ul {
     display: flex;
     list-style-type: none;
     gap: 10px;
-    
 }
 
-h1 {
+h2 {
     text-decoration: none;
     color: #F9FAF8;
 }
@@ -26,4 +25,35 @@ h1 {
 li, a {
     text-decoration: none;
     color: #E5E7EB;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+#topBanner {
+    background-color: white;
+    height: 85px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+#topBanner img {
+    height: 80px;
+}
+
+.hero {
+    display:flex;
+    background-color: #1F2937;
+}
+
+.hero>div {
+    color: white;
+}
+
+.hero>div h1 {
+    font-size: 48px;
 }
