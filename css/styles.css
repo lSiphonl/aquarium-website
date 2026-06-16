@@ -34,17 +34,46 @@ li>a {
 
 #highlights {
     display: flex;
-    font-family: 'Roboto', sans-serif;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 14%;
+    padding-right: 14%;
+}
+
+#highlights>.highlights-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 15px 50px 15px 50px;
+    justify-content: center;
+    /*gap: 10px;*/
+    width: 20px;
+}
+
+#highlights>.highlights-container,img {
+    font-family: 'Roboto', sans-serif;
+    border: 5px solid #3882F6;
+    border-radius: 8px;
+}
+
+#highlights>.highlights-container,figcaption {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    color: #1F2937;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 2px;
+    /*text-wrap: 12px;*/
 }
 
 h2 {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
     color: #1F2937;
     font-size: 36px;
+    padding: 15px 50px 15px 50px;
 }
 
 body {
