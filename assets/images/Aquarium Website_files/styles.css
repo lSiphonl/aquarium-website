@@ -5,11 +5,12 @@
 
 body {
     margin: 0;
+    background-color: white;
     font-family: 'Roboto';
 }
 
 #topBanner {
-    background-color: rgb(255, 255, 255) !important;
+    background-color: white !important; /*Dark mode played with me...*/
     display: flex;
     justify-content: center;
 }
