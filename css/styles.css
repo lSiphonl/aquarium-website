@@ -6,6 +6,7 @@
 body {
     margin: 0;
     font-family: 'Roboto';
+    display: felx;
 }
 
 #topBanner {
@@ -14,9 +15,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px;
 }
 
 #topBanner img {
     height: 80px;
 }
 
+.hero {
+    display:flex;
+    background-color: #1F2937;
+}
+
+.hero>div {
+    color: white;
+}
+
+.hero>div h1 {
+    font-size: 48px;
+}
