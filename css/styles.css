@@ -9,9 +9,11 @@ body {
 }
 
 #topBanner {
-    background-color: rgb(255, 255, 255) !important;
+    background-color: white;
+    height: 85px ;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #topBanner img {
