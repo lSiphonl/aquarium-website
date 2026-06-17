@@ -117,6 +117,7 @@ footer {
 
 #bestSellers {
     background-color: #1F2937;
+    
 }
 
 #bestSellers h2 {
@@ -144,6 +145,12 @@ footer {
 
 #catalogue {
     background-color: #E5E7EB;
+    width: 100%;
+}
+
+#catalogue h1 {
+    margin: 0;
+    padding: 20px;
 }
 
 #shirts {
@@ -191,4 +198,8 @@ footer {
     height: 200px;
     width: 200px;
     padding: 20px;
+}
+
+#stock>section{
+    border: 5px solid #3882F6;
 }
