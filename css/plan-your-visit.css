@@ -1,0 +1,51 @@
+.schedule {
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.schedule-intro {
+  color: #e5e7eb;
+  margin-bottom: 30px;
+}
+
+.schedule-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.schedule-card {
+  background-color: #273549;
+  padding: 25px;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.schedule-card h3 {
+  font-size: 18px;
+}
+
+.schedule-card p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.schedule-card span {
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+.visit-info {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.info-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}

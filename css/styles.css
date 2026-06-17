@@ -1,241 +1,280 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('assets/fonts/Roboto.ttf') format('truetype');
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto.ttf") format("truetype");
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 nav {
-    display: flex;
-    font-family: 'Roboto', sans-serif;
-    background-color: #1F2937;
-    text-decoration: none;
-    justify-content: space-between;
-    padding-left: 14%;
-    padding-right: 14%;
+  display: flex;
+  background-color: #1f2937;
+  text-decoration: none;
+  justify-content: space-between;
+  padding-left: 14%;
+  padding-right: 14%;
 }
 
 ul {
-    display: flex;
-    list-style-type: none;
-    gap: 25px;
-    padding-top: 6px;
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+  padding-top: 6px;
 }
 
-h3>a {
-    text-decoration: none;
-    color: #F9FAF8;
-    font-size: 24px;
+h3 > a {
+  text-decoration: none;
+  color: #f9faf8;
+  font-size: 24px;
 }
 
-li>a {
-    text-decoration: none;
-    color: #E5E7EB;
-    font-size: 18px;
+li > a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
 }
 
 #highlights {
-    display: flex;
-    flex-direction: row;
-    padding-left: 14%;
-    padding-right: 14%;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  padding-left: 14%;
+  padding-right: 14%;
+  align-items: center;
+  justify-content: center;
 }
 
-#highlights>.highlights-container {
-    display: flex;
-    flex-direction: column;
+#highlights > .highlights-container {
+  display: flex;
+  flex-direction: column;
 }
 
-#highlights>.highlights-container,img {
-    font-family: 'Roboto', sans-serif;
-    border: 5px solid #3882F6;
-    border-radius: 8px;
+#highlights > .highlights-container,
+img {
+  border: 5px solid #3882f6;
+  border-radius: 8px;
 }
 
-#highlights>.highlights-container,figcaption {
-    font-family: 'Roboto', sans-serif;
-    color: #1F2937;
-    text-align: center;
-    font-size: 18px;
-    padding-top: 2px;
+#highlights > .highlights-container,
+figcaption {
+  color: #1f2937;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 2px;
 }
 h2 {
-    display: flex;
-    font-family: 'Roboto', sans-serif;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: #1F2937;
-    font-size: 36px;
-    padding: 15px 50px 15px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 36px;
+  padding: 15px 50px 15px 50px;
 }
 
 body {
-    margin: 0;
-    font-family: 'Roboto';
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 #topBanner {
-    background-color: white;
-    height: 85px ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
+  background-color: white;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
 }
 
 #topBanner img {
-    height: 80px;
+  height: 80px;
 }
 
 .hero {
-    display:flex;
-    background-color: #1F2937;
+  display: flex;
+  background-color: #1f2937;
 }
 
-.hero>div {
-    color: white;
+.hero > div {
+  color: white;
 }
 
-.hero>div h1 {
-    font-size: 48px;
+.hero > div h1 {
+  font-size: 48px;
 }
 
 footer {
-    display: flex;
-    background-color: #1F2937;
-    color: white;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  background-color: #1f2937;
+  color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 /*css for merch*/
 
 #bestSellers {
-    background-color: #1F2937;
-    
+  background-color: #1f2937;
 }
 
 #bestSellers h2 {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 10px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
 }
 
 #bestSellers section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 #bestSellers div {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 20px;
 }
 
 #catalogue {
-    background-color: #E5E7EB;
-    width: 100%;
+  background-color: #e5e7eb;
+  width: 100%;
 }
 
 #catalogue h1 {
-    margin: 0;
-    padding: 20px;
+  margin: 0;
+  padding: 20px;
 }
 
 #shirts {
-    background-color: #1F2937;
+  background-color: #1f2937;
 }
 
 #shirts h2 {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 20px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 20px;
 }
 
 #shirts section {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #shirts div {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 20px;
 }
 
 #plushies {
-    background-color: #1F2937;
+  background-color: #1f2937;
 }
 
 #plushies h2 {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 #plushies section {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #plushies div {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 20px;
 }
 
 #plushies div p {
-    display: block;
+  display: block;
 }
 
-#stock{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:#233855;
+#stock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #233855;
 }
 
-#stock>section{
-    border: 5px solid #3882F6;
-    width: 100%;
-    max-width: 1000px;
+#stock > section {
+  border: 5px solid #3882f6;
+  width: 100%;
+  max-width: 1000px;
 }
 
-#stock>section section{
-    display: flex;
-    object-fit: space-around;
-    gap: 20px;
+#stock > section section {
+  display: flex;
+  object-fit: space-around;
+  gap: 20px;
 }
 
-#stock>section section div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+#stock > section section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
-
 
 #stock img {
-    max-width: 200px;
-    height: 200px;
-    object-fit: cover;
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
+/* CTA SECTION */
 
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.cta-container {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border-radius: 8px;
+  padding: 30px 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cta-text h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f9faf8;
+  margin: 0;
+}
+
+.cta-text p {
+  font-size: 16px;
+  color: #e5e7eb;
+}
+
+.btn {
+  color: #f9faf8;
+  border: 2px solid #f9faf8;
+  padding: 8px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
