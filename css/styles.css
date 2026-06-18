@@ -33,6 +33,7 @@ li > a {
   text-decoration: none;
   color: #e5e7eb;
   font-size: 18px;
+  white-space: nowrap;
 }
 
 #highlights {
@@ -49,19 +50,24 @@ li > a {
   flex-direction: column;
 }
 
-#highlights > .highlights-container,
-img {
+#highlights > .highlights-container img {
   border: 5px solid #3882f6;
   border-radius: 8px;
 }
 
-#highlights > .highlights-container,
-figcaption {
+#highlights > .highlights-container figcaption {
   color: #1f2937;
   text-align: center;
   font-size: 18px;
   padding-top: 2px;
 }
+
+#highlights img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
 h2 {
   display: flex;
   align-items: center;
@@ -92,10 +98,24 @@ body {
 .hero {
   display: flex;
   background-color: #1f2937;
+  width: 100%;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.hero > * {
+  max-width: 1200px;
 }
 
 .hero > div {
   color: white;
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero > img {
+  flex: 1;
+  max-width: 500px;
 }
 
 .hero > div h1 {
@@ -277,4 +297,12 @@ footer {
   border-radius: 6px;
   text-decoration: none;
   font-size: 14px;
+}
+
+/*media query for dropping image in small window*/
+
+@media (max-width: 800px) {
+  .hero > div:last-child {
+    display: none;
+  }
 }
