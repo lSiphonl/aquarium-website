@@ -16,8 +16,8 @@ nav {
     background-color: #1F2937;
     text-decoration: none;
     justify-content: space-between;
-    padding-left: 14%;
-    padding-right: 14%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 ul {
@@ -41,28 +41,35 @@ li>a {
 
 #highlights {
     display: flex;
-    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
     padding-left: 14%;
     padding-right: 14%;
-    align-items: center;
-    justify-content: center;
+    padding-bottom: 14%;
 }
 
-#highlights>.highlights-container {
+#highlights>figure {
     display: flex;
     flex-direction: column;
-    padding-bottom: 2px;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    margin: 0;
 }
 
-#highlights>.highlights-container,img {
+#highlights>.highlights-container,img{
     border: 5px solid #3882F6;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 #highlights>.highlights-container,figcaption {
     color: #1F2937;
     text-align: center;
+    justify-content: center;
     font-size: 18px;
+    padding-top: 4px;
 }
 
 h2 {
