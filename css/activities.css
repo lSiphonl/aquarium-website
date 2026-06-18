@@ -132,6 +132,27 @@ figcaption>h3 {
     font-size: 24px;
 }
 
+a#top-button {
+    display: flex;
+    background-color: transparent;
+    border: 3px solid #1F2937;
+    border-radius: 50%;
+    color: #1F2937;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding-top: 8px;
+    bottom: 60px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+}
+
 footer {
     display: flex;
     background-color: #1F2937;
