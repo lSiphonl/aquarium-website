@@ -129,7 +129,7 @@ body {
   font-size: 48px;
 }
 
-a#top-button {
+.top-button {
     display: flex;
     background-color: transparent;
     border: 3px solid #1F2937;
