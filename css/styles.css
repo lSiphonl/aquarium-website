@@ -96,7 +96,7 @@ body {
   justify-content: space-between;
   box-sizing: border-box;
   padding: 60px 10%;
-  align-items: center;
+  align-items: flex-start;
   gap: 50px;
 }
 
@@ -116,7 +116,7 @@ body {
 
 .top-button {
   display: flex;
-  background-color: #F9FAF8;
+  background-color: #f9faf8;
   border: 3px solid #1f2937;
   border-radius: 50%;
   color: #1f2937;
