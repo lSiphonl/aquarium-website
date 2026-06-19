@@ -143,144 +143,6 @@ footer {
 
 }
 
-/*css for merch*/
-
-#bestSellers {
-  background-color: #1f2937;
-}
-
-#bestSellers h2 {
-  color: white;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding: 10px;
-}
-
-#bestSellers section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-#bestSellers div {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  padding: 20px;
-}
-
-.catalogue {
-  background-color: #e5e7eb;
-}
-
-#catalogue {
-  background-color: #e5e7eb;
-  width: 100%;
-}
-
-#catalogue h1 {
-  margin: 0;
-  padding: 15px 10%;
-}
-
-#shirts {
-  background-color: #1f2937;
-}
-
-#shirts h2 {
-  color: white;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding: 20px;
-}
-
-#shirts section {
-  display: flex;
-  justify-content: space-between;
-}
-
-#shirts div {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  padding: 20px;
-}
-
-#plushies {
-  background-color: #1f2937;
-}
-
-#plushies h2 {
-  color: white;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-#plushies section {
-  display: flex;
-  justify-content: space-between;
-}
-
-#plushies div {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  padding: 20px;
-}
-
-#plushies div p {
-  display: block;
-}
-
-#stock {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  gap: 30px;
-  padding-bottom: 30px;
-}
-
-#stock > section {
-  width: 100%;
-  max-width: 1000px;
-  border: 3px solid #3882f6;
-  border-radius: 6px;
-}
-
-#stock > section section {
-  display: flex;
-  object-fit: space-around;
-  gap: 20px;
-}
-
-#stock > section section div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-}
-
-#stock img {
-  max-width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border: 3px solid #3882f6;
-  border-radius: 4px;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease; /*pick up image part 1*/
-}
-
-#stock img:hover {
-  transform: translateY(-8px); /*pick up image part 2*/
-}
-
 /* Testimonial & CTA Sections */
 .container {
   max-width: 900px;
@@ -359,18 +221,9 @@ footer {
 }
 
 /*media query for dropping image in small window*/
-
 @media (max-width: 800px) {
   .hero > div:last-child {
     display: none;
   }
 }
 
-/*media query to align products vertically for small windows*/
-
-@media (max-width: 800px) {
-  #stock > section section {
-    flex-direction: column;
-    align-items: center;
-  }
-}
