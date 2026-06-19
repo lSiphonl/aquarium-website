@@ -89,19 +89,6 @@ body {
   margin: 0;
 }
 
-#topBanner {
-  background-color: white;
-  height: 85px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-}
-
-#topBanner img {
-  height: 80px;
-}
-
 .hero {
   display: flex;
   background-color: #1f2937;
