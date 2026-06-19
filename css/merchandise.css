@@ -73,10 +73,6 @@
   padding: 20px;
 }
 
-#plushies div p {
-  display: block;
-}
-
 @media (max-width: 800px) {
   #stock > section section {
     flex-direction: column;
