@@ -93,14 +93,15 @@ body {
   display: flex;
   background-color: #1f2937;
   width: 100%;
-  justify-content: center;
-  padding: 60px 0;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 60px 10%;
+  align-items: center;
+  gap: 50px;
 }
 
 .hero > div {
   color: white;
-  flex: 1;
-  max-width: 500px;
 }
 
 .hero img {
@@ -221,7 +222,7 @@ footer {
 }
 
 /*media query for dropping image in small window*/
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .hero > div:last-child {
     display: none;
   }
