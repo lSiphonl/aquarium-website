@@ -5,10 +5,40 @@
 
 * {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: bolder;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  color: #1F2937;
+  font-size: 36px;
+  padding: 15px 50px 15px 50px;
+}
+
+p {
+    margin-top: 3px;
+    color: #E5E7EB;
+    font-size: 18px;
 }
 
 nav {
@@ -87,38 +117,21 @@ h2 {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-#topBanner {
-  background-color: white;
-  height: 85px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-}
-
-#topBanner img {
-  height: 80px;
 }
 
 .hero {
   display: flex;
   background-color: #1f2937;
   width: 100%;
-  justify-content: center;
-  padding: 60px 0;
-}
-
-.hero > * {
-  max-width: 1200px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 60px 10%;
+  align-items: flex-start;
+  gap: 50px;
 }
 
 .hero > div {
   color: white;
-  flex: 1;
-  max-width: 500px;
 }
 
 .hero img {
@@ -132,24 +145,24 @@ body {
 }
 
 .top-button {
-  display: flex;
-  background-color: #F9FAF8;
-  border: 3px solid #1f2937;
-  border-radius: 50%;
-  color: #1f2937;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  padding-top: 8px;
-  bottom: 60px;
-  right: 20px;
-  z-index: 1000;
-  width: 55px;
-  height: 47px;
+    display: flex;
+    background-color: #f9fAf8;
+    border: 3px solid #1f2937;
+    border-radius: 50%;
+    color: #1f2937;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding-top: 8px;
+    bottom: 60px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
 }
 
 footer {
@@ -158,144 +171,44 @@ footer {
   color: white;
   justify-content: center;
   align-items: center;
+
 }
 
-/*css for merch*/
-
-#bestSellers {
-  background-color: #1f2937;
-}
-
-#bestSellers h2 {
-  color: white;
+/* Highlights Section */
+#highlights {
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
   display: flex;
-  padding: 10px;
+  flex-direction: row;
+  gap: 40px;
+  padding-left: 14%;
+  padding-right: 14%;
+  padding-bottom: 7%;
 }
 
-#bestSellers section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-#bestSellers div {
+#highlights > .highlights-container {
   display: flex;
   flex-direction: column;
   width: 200px;
-  padding: 20px;
+  margin: 0px;
 }
 
-.catalogue {
-  background-color: #e5e7eb;
+#highlights > .highlights-container img {
+  border: 5px solid #3882f6;
+  border-radius: 8px;
 }
 
-#catalogue {
-  background-color: #e5e7eb;
-  width: 100%;
+#highlights > .highlights-container figcaption {
+  color: #1f2937;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 7px;
 }
 
-#catalogue h1 {
-  margin: 0;
-  padding: 20px 8%;
-}
-
-#shirts {
-  background-color: #1f2937;
-}
-
-#shirts h2 {
-  color: white;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding: 20px;
-}
-
-#shirts section {
-  display: flex;
-  justify-content: space-between;
-}
-
-#shirts div {
-  display: flex;
-  flex-direction: column;
+#highlights img {
   width: 200px;
-  padding: 20px;
-}
-
-#plushies {
-  background-color: #1f2937;
-}
-
-#plushies h2 {
-  color: white;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-#plushies section {
-  display: flex;
-  justify-content: space-between;
-}
-
-#plushies div {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  padding: 20px;
-}
-
-#plushies div p {
-  display: block;
-}
-
-#stock {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  gap: 30px;
-  padding: 6px;
-}
-
-#stock > section {
-  width: 100%;
-  max-width: 1000px;
-  border: 3px solid #3882f6;
-  border-radius: 6px;
-}
-
-#stock > section section {
-  display: flex;
-  object-fit: space-around;
-  gap: 20px;
-}
-
-#stock > section section div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-}
-
-#stock img {
-  max-width: 200px;
   height: 200px;
   object-fit: cover;
-  border: 3px solid #3882f6;
-  border-radius: 4px;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease; /*pick up image part 1*/
-}
-
-#stock img:hover {
-  transform: translateY(-8px); /*pick up image part 2*/
 }
 
 /* Testimonial & CTA Sections */
@@ -376,18 +289,9 @@ footer {
 }
 
 /*media query for dropping image in small window*/
-
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .hero > div:last-child {
     display: none;
   }
 }
 
-/*media query to align products vertically for small windows*/
-
-@media (max-width: 800px) {
-  #stock > section section {
-    flex-direction: column;
-    align-items: center;
-  }
-}

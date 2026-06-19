@@ -1,0 +1,81 @@
+.catalogue {
+  background-color: #e5e7eb;
+}
+
+#catalogue h1 {
+  margin: 0;
+  padding: 15px 10%;
+}
+
+#stock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+#stock img {
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid #3882f6;
+  border-radius: 4px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#stock img:hover {
+  transform: translateY(-8px);
+}
+
+.merch-section {
+  background-color: #1f2937;
+  width: 100%;
+  max-width: 1000px;
+  border: 3px solid #3882f6;
+  border-radius: 6px;
+}
+
+.merch-section h2 {
+  color: white;
+  text-decoration: underline;
+}
+
+.merch-section section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.merch-section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 200px;
+  padding: 20px;
+}
+
+#bestSellers h2 {
+  padding: 10px;
+}
+
+#bestSellers section {
+  align-items: center;
+  padding: 20px;
+}
+
+#shirts h2 {
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  #stock > section section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
