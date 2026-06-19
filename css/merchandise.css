@@ -1,26 +1,3 @@
-#bestSellers, #shirts, #plushies {
-  background-color: #1f2937;
-}
-
-#bestSellers h2 {
-  color: white;
-  padding: 10px;
-}
-
-#bestSellers section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-#bestSellers div {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  padding: 20px;
-}
-
 .catalogue {
   background-color: #e5e7eb;
 }
@@ -33,49 +10,6 @@
 #catalogue h1 {
   margin: 0;
   padding: 15px 10%;
-}
-
-#shirts h2 {
-  color: white;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding: 20px;
-}
-
-#shirts section {
-  display: flex;
-  justify-content: space-between;
-}
-
-#shirts div {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  padding: 20px;
-}
-
-#plushies h2 {
-  color: white;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-#plushies section {
-  display: flex;
-  justify-content: space-between;
-}
-
-#plushies div {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  padding: 20px;
-}
-
-#plushies div p {
-  display: block;
 }
 
 #stock {
@@ -116,14 +50,49 @@
   border-radius: 4px;
   transition:
     transform 0.2s ease,
-    box-shadow 0.2s ease; /*pick up image part 1*/
+    box-shadow 0.2s ease;
 }
 
 #stock img:hover {
-  transform: translateY(-8px); /*pick up image part 2*/
+  transform: translateY(-8px);
 }
 
-/*media query to align products vertically for small windows*/
+.merch-section {
+  background-color: #1f2937;
+}
+
+.merch-section h2 {
+  color: white;
+}
+
+.merch-section section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.merch-section div {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 20px;
+}
+
+#bestSellers h2 {
+  padding: 10px;
+}
+
+#bestSellers section {
+  align-items: center;
+  padding: 20px;
+}
+
+#shirts h2 {
+  padding: 20px;
+}
+
+#plushies div p {
+  display: block;
+}
 
 @media (max-width: 800px) {
   #stock > section section {
