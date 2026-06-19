@@ -87,7 +87,6 @@ h2 {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
 }
 
 #topBanner {
@@ -158,6 +157,7 @@ footer {
   color: white;
   justify-content: center;
   align-items: center;
+
 }
 
 /*css for merch*/
@@ -199,7 +199,7 @@ footer {
 
 #catalogue h1 {
   margin: 0;
-  padding: 20px 8%;
+  padding: 15px 10%;
 }
 
 #shirts {
@@ -260,7 +260,7 @@ footer {
   align-items: center;
   background-color: transparent;
   gap: 30px;
-  padding: 6px;
+  padding-bottom: 30px;
 }
 
 #stock > section {
