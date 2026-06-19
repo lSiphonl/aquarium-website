@@ -107,13 +107,19 @@ h2 {
     display: flex;
     flex-direction: column;
     margin: 0;
-    width: 320px; 
+    width: 320px;
+    overflow: hidden;
 }
 
 .main-activities figure img {
     object-fit: cover;
     width: 100%;
     height: 320px;
+    transition: transform 0.5s ease;
+}
+
+.main-activities figure:hover img {
+    transform: scale(1.05);
 }
 
 .main-activities figure figcaption {
