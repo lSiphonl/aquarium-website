@@ -97,10 +97,6 @@ body {
   padding: 60px 0;
 }
 
-.hero > * {
-  max-width: 1200px;
-}
-
 .hero > div {
   color: white;
   flex: 1;
