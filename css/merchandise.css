@@ -1,4 +1,4 @@
-#bestSellers {
+#bestSellers, #shirts, #plushies {
   background-color: #1f2937;
 }
 
@@ -35,10 +35,6 @@
   padding: 15px 10%;
 }
 
-#shirts {
-  background-color: #1f2937;
-}
-
 #shirts h2 {
   color: white;
   justify-content: center;
@@ -57,10 +53,6 @@
   flex-direction: column;
   width: 200px;
   padding: 20px;
-}
-
-#plushies {
-  background-color: #1f2937;
 }
 
 #plushies h2 {
