@@ -1,0 +1,90 @@
+.animals,
+.schedule,
+.visit-info {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.animals {
+  background-color: #e5e7eb;
+}
+
+.schedule {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+.visit-info {
+  background-color: #ffffff;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #1f2937;
+}
+
+.card p {
+  font-size: 14px;
+  padding: 0 10px 15px;
+  color: #4b5563;
+}
+
+.schedule-list {
+  max-width: 500px;
+  margin: 40px auto 0;
+}
+
+.schedule-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #4b5563;
+  font-size: 16px;
+  color: #e5e7eb;
+}
+
+.info-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.info-grid div {
+  background-color: #f9faf8;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  width: 220px;
+}
+
+.info-grid h4 {
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.info-grid p {
+  color: #4b5563;
+}
