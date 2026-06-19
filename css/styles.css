@@ -368,6 +368,12 @@ footer {
   font-size: 14px;
 }
 
+#jumpIn {
+  color: #f9faf8;
+  background-color: #3882f6;
+  border: none;
+}
+
 /*media query for dropping image in small window*/
 
 @media (max-width: 800px) {
