@@ -121,9 +121,10 @@ body {
   max-width: 500px;
 }
 
-.hero > img {
-  flex: 1;
-  max-width: 500px;
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hero > div h1 {
@@ -198,7 +199,7 @@ footer {
 
 #catalogue h1 {
   margin: 0;
-  padding: 20px;
+  padding: 20px 8%;
 }
 
 #shirts {
@@ -373,5 +374,14 @@ footer {
 @media (max-width: 800px) {
   .hero > div:last-child {
     display: none;
+  }
+}
+
+/*media query to align products vertically for small windows*/
+
+@media (max-width: 800px) {
+  #stock > section section {
+    flex-direction: column;
+    align-items: center;
   }
 }
