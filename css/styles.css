@@ -241,34 +241,47 @@ footer {
 }
 
 .cta {
-  display: flex;
-  justify-content: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
+  background-color: #ffffff;
 }
 
 .cta-container {
-  background-color: #3882f6;
-  color: #f9faf8;
-  border-radius: 8px;
-  padding: 30px 50px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  padding: 30px 60px;
+  border-radius: 8px;
+  background-color: #3882f6;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.cta-text h2 {
-  font-size: 22px;
-  font-weight: 700;
+.cta-text h3 {
   color: #f9faf8;
-  margin: 0;
+  font-size: 24px;
+  margin-bottom: 5px;
 }
 
 .cta-text p {
-  font-size: 16px;
   color: #e5e7eb;
+  font-size: 16px;
+}
+
+.cta-button a {
+  display: inline-block;
+  padding: 8px 25px;
+  border: 2px solid #f9faf8;
+  color: #f9faf8;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.cta-button a:hover {
+  background-color: #f9faf8;
+  color: #3882f6;
 }
 
 .btn {
@@ -286,7 +299,6 @@ footer {
   border: none;
 }
 
-/*media query for dropping image in small window*/
 @media (max-width: 900px) {
   .hero > div:last-child {
     display: none;
