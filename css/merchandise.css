@@ -73,6 +73,18 @@
   padding: 20px;
 }
 
+#bestSellers div {
+  align-items: center;
+  width: 250px;
+  padding: 20px;
+}
+
+#bestSellers div p {
+  text-align: left;
+  width: 200px;
+  margin: 10px 0 0 0;
+}
+
 #shirts h2 {
   padding: 20px;
 }
