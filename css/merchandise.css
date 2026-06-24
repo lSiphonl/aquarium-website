@@ -35,7 +35,7 @@
   max-width: 200px;
   height: 200px;
   object-fit: cover;
-  border: 3px solid #3882f6;
+
   border-radius: 4px;
   transition:
     transform 0.2s ease,
@@ -50,7 +50,7 @@
   background-color: #1f2937;
   width: 100%;
   box-sizing: border-box;
-  border: 3px solid #3882f6;
+
   border-radius: 6px;
 }
 
