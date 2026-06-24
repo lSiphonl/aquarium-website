@@ -70,6 +70,10 @@ li > a {
   white-space: nowrap;
 }
 
+#menu-toggle {
+  display: none;
+}
+
 .hero {
     display: flex;
     align-items: flex-start;
@@ -247,13 +251,60 @@ footer {
   border: none;
 }
 
-@media (max-width: 1100px) {
-  #highlights > .highlights-container {
-      flex: 0 0 calc(25% - 40px);
-  } 
+@media (min-width: 1100px) {
+  .burger-menu {
+    display: none;
+  }
+  ul {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 1099px) {
   .hero > div:last-child {
     display: none;
   }
+
+  nav {
+  padding-right: 4%;
+}
+
+  ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #1F2937;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .burger-menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-top: 12px;
+    background-image: url(../assets/images/menu-icon.png);
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  #menu-toggle:checked ~ ul {
+    display: flex;
+  }
+
+  #menu-toggle:checked + .burger-menu {
+    background-image: url(../assets/images/close-icon.png);
+  }
+
 }
 
 @media (max-width: 1099px) and (min-width: 800px) {
