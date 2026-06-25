@@ -27,8 +27,8 @@ h1 {
 
 h2 {
   display: flex;
-  align-items: center;
   justify-content: center;
+  text-align: center;
   font-weight: bolder;
   color: #1f2937;
   font-size: 36px;
@@ -120,7 +120,7 @@ footer {
   background-color: #1f2937;
   color: white;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   padding-top:14px;
 }
 
@@ -274,8 +274,8 @@ footer {
   }
 
   nav {
-  padding-right: 4%;
-}
+    padding-right: 4%;
+  }
 
   ul {
     display: none;
