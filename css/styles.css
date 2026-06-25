@@ -304,6 +304,7 @@ footer {
 
   #menu-toggle:checked ~ ul {
     display: flex;
+    z-index: 9999;
   }
 
   #menu-toggle:checked + .burger-menu {
