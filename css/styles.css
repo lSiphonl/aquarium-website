@@ -243,6 +243,8 @@ footer {
   border-radius: 6px;
   text-decoration: none;
   font-size: 14px;
+  display: inline-block;
+  width: fit-content;
 }
 
 #jumpIn {
