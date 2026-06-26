@@ -90,10 +90,28 @@ li > a {
     flex-direction: column;
 }
 
-.hero img {
-    width: 80svh;
-    height: 40svh;
+.hero div p {
+  max-width: 700px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
+
+.hero > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.hero > div:first-child {
+  flex: 1;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 1200px;
+    max-height: 47svh;
+}
+
 .top-button {
   display: flex;
   background-color: #f9faf8;
@@ -270,7 +288,7 @@ footer {
   }
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 900px) {
   .hero > div:last-child {
     display: none;
   }
