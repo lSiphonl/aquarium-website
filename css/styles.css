@@ -247,6 +247,7 @@ footer {
   font-weight: bold;
   margin-left: 20px;
   text-align: center;
+  width: 150px;
 }
 
 .cta-button a:hover {
