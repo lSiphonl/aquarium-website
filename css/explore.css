@@ -8,7 +8,7 @@
 }
 
 .container {
-  max-width: 1350px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -63,22 +63,33 @@
 .info-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 30px;
   align-items: stretch;
 }
 
-.schedule,
+.schedule {
+  border-right: 2px solid #e5e7eb;
+  padding-right: 50px;
+}
+
 .visit-info {
-  width: 100%;
+  padding-left: 50px;
+}
+
+.schedule, .visit-info {
   background-color: #f9faf8;
-  padding: 30px;
+  padding: 50px;
+  width: 100%;
+  min-height: 350px;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .schedule h2,
 .visit-info h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0 0 30px 0;
+  color: #1f2937;
 }
 
 .schedule-list {
@@ -88,7 +99,7 @@
 .schedule-row {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 15px 0;
   color: #1f2937;
   border-bottom: 1px solid #e5e7eb;
 }
@@ -96,13 +107,13 @@
 .info-grid-inner {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 30px;
 }
 
 .info-grid-inner h4 {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   color: #1f2937;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .info-grid-inner p {
