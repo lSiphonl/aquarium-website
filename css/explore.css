@@ -8,13 +8,14 @@
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -22,7 +23,7 @@
   background-color: #f9faf8;
   border-radius: 8px;
   overflow: hidden;
-  width: 100%;
+  width: 245px;
   height: 320px;
   display: flex;
   flex-direction: column;
