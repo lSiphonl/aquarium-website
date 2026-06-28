@@ -61,28 +61,30 @@
 }
 
 .info-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  display: flex;
+  gap: 40px;
   align-items: stretch;
-}
-
-.schedule {
-  border-right: 2px solid #e5e7eb;
-  padding-right: 50px;
-}
-
-.visit-info {
-  padding-left: 50px;
+  justify-content: center;
 }
 
 .schedule, .visit-info {
   background-color: #f9faf8;
   padding: 50px;
-  width: 100%;
+  padding: 40px;
+  flex: 1;
+  min-width: 300px;
   min-height: 350px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.schedule {
+  flex: 1;
+  position: relative;
+}
+
+.visit-info {
+  flex: 1;
 }
 
 .schedule h2,
@@ -121,13 +123,15 @@
   margin: 0;
 }
 
-@media (max-width: 1024px) {
-  .card-container {
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width: 900px) {
+  .info-grid {
+    flex-direction: column;
+    gap: 30px;
   }
 
-  .info-grid {
-    grid-template-columns: 1fr;
+  .schedule,
+  .visit-info {
+    width: 100%;
   }
 }
 
