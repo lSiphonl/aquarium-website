@@ -51,7 +51,7 @@ figcaption > h3 {
     align-items: flex-start;
     justify-content: space-between;
     gap: 50px;               
-    padding: 0% 5% 5% 5%;
+    padding: 0% 5% 3% 5%;
 }
 
 .sub-activities > div:first-child {
@@ -84,19 +84,18 @@ figcaption > h3 {
 
 .sub-activities img {
     width: 100%;
-    height: auto;
-    max-height: 70svh;
+    max-height: 64svh;
+    aspect-ratio: 16 / 9;
     object-fit: cover;      
     display: block;
 }
 
 @media (max-width: 850px) { 
     .sub-activities {
-        padding-top: 8%;
+        padding-top: 5%;
         flex-direction: column;
         gap: 25px;
         align-items: flex-start;
-        justify-content: flex-start;
     }
     
     .sub-activities > div:first-child {
@@ -104,7 +103,6 @@ figcaption > h3 {
     }
     
     .sub-activities img {
-        max-height: 40svh;
         width: 100%;
         object-fit: cover;
     }
