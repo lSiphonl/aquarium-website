@@ -1,24 +1,27 @@
 .main-activities {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 35px;
     padding: 0% 8% 4% 8%;
 }
 
 .main-activities > figure {
     display: flex;
+    flex: 1 1 380px;
     flex-direction: column;
     margin: 0;
-    width: 365px;
+    max-width: 420px;
     overflow: hidden;
 }
 
 .main-activities img {
     object-fit: cover;
     width: 100%;
-    max-width: 365px;
-    height: 365px;
+    max-width: 420px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin-bottom: -0.5px;
     transition: transform 0.5s ease;
 }
 
@@ -28,7 +31,7 @@
 
 .main-activities figcaption {
     width: 100%;
-    max-width: 365px;
+    max-width: 420px;
     text-align: left;
     flex-grow: 1;
     padding-left: 10px;
@@ -43,40 +46,72 @@ figcaption > h3 {
     font-size: 24px;
 }
 
-@media (max-width: 1200px) {
-    .main-activities {
-      flex: 0 0 calc(25% - 40px);
-  } 
+.sub-activities {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;               
+    padding: 0% 5% 5% 5%;
 }
 
-@media (max-width: 1199px) and (min-width: 900px){
-    .main-activities {
-      flex: 0 0 calc(50% - 40px);
-  }
+.sub-activities > div:first-child {
+    flex: 1.5;
 }
 
-@media (max-width: 899px) {
-    .main-activities {
-      align-items: center;
-      flex-direction: column;
-  }
+.sub-activities > div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
 }
 
-@media (max-width: 415px) {
-    .main-activities {
-        padding: 7% 8%;
+.sub-activities h2 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.sub-activities p {
+    color:#1F2937;
+    max-width: 700px;
+    margin: 0;
+    padding-top: 6px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.sub-activities img {
+    width: 100%;
+    height: auto;
+    max-height: 70svh;
+    object-fit: cover;      
+    display: block;
+}
+
+@media (max-width: 850px) { 
+    .sub-activities {
+        padding-top: 8%;
+        flex-direction: column;
+        gap: 25px;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
+    
+    .sub-activities > div:first-child {
+        width: 100%;
+    }
+    
+    .sub-activities img {
+        max-height: 40svh;
+        width: 100%;
+        object-fit: cover;
+    }
+}
 
+@media (max-width: 600px) {
     .main-activities > figure {
-      width: 280px;
-    }
-
-    .main-activities img {
-      max-width: 280px;
-      height: 280px;
-    }
-
-    .main-activities figcaption {
-      max-width: 280px;
+        flex: 1 1 100%;
     }
 }

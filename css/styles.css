@@ -85,7 +85,7 @@ li > a {
 }
 
 .hero div {
-    color: #F9FAF8;
+    /*color: #F9FAF8;*/
     display: flex;
     flex-direction: column;
 }
@@ -156,8 +156,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*flex: 0 0 calc(50% - 40px);
-  width: 200px;*/
   margin: 0px;
 }
 
@@ -213,41 +211,51 @@ footer {
 .cta {
   padding: 80px 20px;
   background-color: #ffffff;
+  margin-left: 20px;
 }
 
 .cta-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 60px;
+  padding: 40px 60px;
   border-radius: 8px;
   background-color: #3882f6;
-  max-width: 900px;
+  max-width: 850px;
   margin: 0 auto;
+  gap: 50px;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  margin:0;
 }
 
 .cta-text h3 {
   color: #f9faf8;
-  font-size: 24px;
-  margin-bottom: 5px;
+  font-size: 24px; 
+  margin: 0;
 }
 
 .cta-text p {
   color: #e5e7eb;
   font-size: 16px;
+  margin: 0;
 }
 
 .cta-button a {
   display: inline-block;
   padding: 8px 25px;
+  margin-top: 5%;
   border: 2px solid #f9faf8;
   color: #f9faf8;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  margin-left: 20px;
   text-align: center;
-  width: 150px;
+  white-space: nowrap;
 }
 
 .cta-button a:hover {
@@ -262,6 +270,7 @@ footer {
   border-radius: 6px;
   text-decoration: none;
   font-size: 14px;
+  font-weight: bold;
   display: inline-block;
   width: fit-content;
 }
@@ -332,6 +341,25 @@ footer {
     background-image: url(../assets/images/close-icon.png);
   }
 
+  
+  .cta-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+    padding: 30px 20px;
+    gap: 7px;               
+  }
+
+  .cta-text {
+    padding-left: 0%;
+    gap: 5px;               
+  }
+
+  .cta-button a {
+    margin-left: 0;
+    width: 100%;
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 1099px) and (min-width: 800px) {
